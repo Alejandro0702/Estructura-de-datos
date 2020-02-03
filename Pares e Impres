@@ -1,0 +1,28 @@
+        static void Main(string[] args)
+        {
+            Console.Title = "Franco Lizarraga";
+            Console.Write("De cualquier numero: ");
+            int num = int.Parse(Console.ReadLine());
+            Console.WriteLine("Mostrando resultados: ");
+            Parnum(num);
+            Console.ReadKey();
+        }
+        static void Parnum(int num)
+        {
+            if (num!=0)
+            {
+                int n = num % 2;
+                if (n % 2 == 0)
+                    Console.WriteLine("{0} Es par", num);
+                Imparnum(num);
+            }
+            else
+            { Console.WriteLine("Es todo por hoy"); }
+        }
+        static void Imparnum(int num)
+        {
+            int n = num % 2;
+            if (n % 2 == 1)
+                Console.WriteLine("{0} Es impar", num);
+            Parnum(num - 1);
+        }
