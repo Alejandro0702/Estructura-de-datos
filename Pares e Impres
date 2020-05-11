@@ -1,7 +1,8 @@
         static void Main(string[] args)
         {
             Console.Title = "Franco Lizarraga";
-            Console.Write("De cualquier numero: ");
+            Console.WriteLine("RECURSIVIDAD");
+            Console.Write("Ingrese numero: ");
             int num = int.Parse(Console.ReadLine());
             Console.WriteLine("Mostrando resultados: ");
             Parnum(num);
@@ -17,7 +18,7 @@
                 Imparnum(num);
             }
             else
-            { Console.WriteLine("Es todo por hoy"); }
+            { Console.WriteLine("Proceso terminado"); }
         }
         static void Imparnum(int num)
         {
